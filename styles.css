@@ -305,7 +305,8 @@ input[type="search"] {
 }
 
 .card:hover, .icon:hover,
-.link:hover {
+.link:hover, .trending:hover,
+.board:hover {
   box-shadow: 0 0 10px #FCF4E7;
   border-radius: 12px;
 }
