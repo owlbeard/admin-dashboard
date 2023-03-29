@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  color: white;
+  border-radius: 20px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  background: #0B2447;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 1fr 4fr 5fr;
+  background: #576CBC;
+}
+
+.containerTwo {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.logo {
+  grid-row: 1 / 2;
+}
+
+.sideLinks {
+  grid-row: 2 / 3;
+}
+
+.settings {
+  grid-row: 3 / 4;
+}
+
+.topBar {
+  grid-row: 1 / 2;
+  display: grid;
+  margin-left: -16px;
+  grid-template-columns: 2fr 1fr;
+  background: #A5D7E8;
+  color: #0B2447;
+  height: 140px;
+}
+
+.content {
+  grid-row: 2 / 3;
+  width: 1500px;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 16px;
+  
+}
+
+.searchBar {
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.topLinks {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.article {
+  grid-column: 1 / 2;
+  display: grid;
+  height: 800px;
+  grid-template-rows: 1fr 9fr 1fr;
+  gap: 16px;
+}
+
+.extraContent {
+  grid-column: 2 / 3;
+  display: grid;
+  height: 800px;
+  grid-template-rows: 1fr 4fr 1fr 4fr;
+  align-content: center;
+}
+
+.bar {
+  grid-row: 1 / 2;
+}
+
+.welcome {
+  grid-row: 2 / 3;
+}
+
+.profile {
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  margin-right: 16px;
+  margin-top: 8px;
+}
+
+.links {
+  grid-row: 2 / 3;
+}
+
+.headerAnnouncement {
+  grid-row: 1 / 2;
+}
+
+.board {
+  grid-row: 2 / 3;
+  background: #A5D7E8;
+  border-radius: 8px;
+  margin-right: 16px;
+  color: #0B2447;
+}
+
+.headerTrend {
+  grid-row: 3 / 4;
+}
+
+.trending {
+  grid-row: 4 / 5;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  background: #A5D7E8;
+  color: #0B2447;
+  border-radius: 8px;
+  margin-right: 16px;
+  margin-bottom: 40px;
+  font-size: 12px;
+}
+
+.cardHeader {
+  grid-row: 1 / 2;
+}
+
+.artitle {
+  grid-row: 1 / 2;
+  font-size: 24px;
+}
+
+.cards {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 16px;
+  margin-top: -12px;
+}
+
+.card {
+  height: 250px;
+  background-color: #576CBC;
+  border: 2px #0B2447;
+  border-radius: 8px;
+  position: relative;
+}
+
+.card>p {
+  padding: 18px;
+}
+
+.title {
+  margin-bottom: -50px;
+  font-weight: bolder;
+}
+
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+img {
+  border-radius: 50%;
+  height: 50px;
+  padding: 0;
+}
+
+.links>ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 48px;
+  margin-right: 16px;
+}
+
+.sideLinks>ul, .settings>ul {
+  list-style: none;
+}
+
+.sideLinks>ul>li, .settings>ul>li {
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+  align-items: center;
+}
+
+.icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  width: 30px;
+  height: 30px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  position: absolute;
+  left: 220px;
+  top: 200px;
+}
+
+.announce {
+  font-size: 12px;
+  margin-top: 30px;
+  padding: 0 30px
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 100px;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+.announceBorder {
+  width: 300px;
+  height: 1px;
+  background-color: #0B2447;
+  margin-left: 24px;
+}
+
+.bar {
+  display: flex;
+}
+
+#site-search {
+  align-self: center;
+  flex: 1;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  gap: 24px;
+}
+
+.welcomeImg {
+  height: 75px;
+  width: 75px;
+  margin-bottom: 15px;
+}
+
+.welcomeText {
+  height: 75px;
+  width: 75px;
+  margin-bottom: 30px;
+}
+
+input[type="search"] {
+  appearance: none;
+  border-radius: 8px;
+  border: 0;
+}
+
+.trendImage {
+  width: 50px;
+  height: 50px;
+}
+
+.link {
+  background-color: #576CBC;
+  border-radius: 12px;
+  color: white;
+  padding: 16px;
+}
+
+.card:hover, .icon:hover,
+.link:hover {
+  box-shadow: 0 0 10px #FCF4E7;
+  border-radius: 12px;
+}
+
+.trendImage:hover {
+  box-shadow: 0 0 10px #FCF4E7;
+  border-radius: 50%;
+}
+
+input[type="search"]:focus {
+  outline: 0;
+  box-shadow: 0 0 10px #FCF4E7;
+}
+
+.profileIcon {
+  width: 40px;
+  height: 40px;
+}
