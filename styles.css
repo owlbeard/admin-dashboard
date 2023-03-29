@@ -165,11 +165,13 @@ body {
 }
 
 .card {
-  height: 250px;
+  height: 300px;
   background-color: #576CBC;
   border: 2px #0B2447;
   border-radius: 8px;
   position: relative;
+  border-left: 0.5rem solid #A5D7E8;
+  font-size: 18px;
 }
 
 .card>p {
@@ -224,7 +226,7 @@ img {
   gap: 16px;
   position: absolute;
   left: 220px;
-  top: 200px;
+  top: 250px;
 }
 
 .announce {
